@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+      gap: 40px;
+    }
+    .product-image {
+      flex: 1 1 400px;
+    }
+    .product-image img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .product-details {
+      flex: 1 1 400px;
+    }
+    .product-details h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .price {
+      font-size: 24px;
+      color: green;
+      margin-bottom: 20px;
+    }
+    .product-details p {
+      line-height: 1.6;
+    }
+    .buy-btn {
+      padding: 10px 20px;
+      background: green;
+      color: white;
+      border: none;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: white;
+    }
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tech Store</h1>
+  </header>
+
+  <div class="product-container">
+    <div class="product-image">
+      <img src="https://picsum.photos/seed/laptop/600/400" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2>Ultra HD Laptop</h2>
+      <div class="price">$1299.99</div>
+      <p>This powerful laptop features a 4K display, 16GB RAM, and a lightning-fast SSD. Ideal for gaming, design, and high-performance computing needs.</p>
+      <button class="buy-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Tech Store. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
